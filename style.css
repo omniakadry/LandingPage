@@ -37,7 +37,7 @@ body {
 
 /* Header */
 .header {
-    background: var(--primary-color);
+    background: var(--text-light);
     color: var(--white);
     padding: 1rem 0;
     box-shadow: var(--shadow);
@@ -664,7 +664,7 @@ body {
 
 /* Footer */
 .footer {
-    background: var(--gradient-primary);
+    background: var(--text-light);
     color: #f0f0f0;
     padding: 4rem 0 2rem;
     position: relative;
@@ -839,10 +839,10 @@ body {
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(107, 27, 27, 0.1);
     padding-top: 1.5rem;
     text-align: center;
-    color: #bdc3c7;
+    color: #0b2c42;
     font-size: 0.9rem;
     margin-top: 1rem;
     position: relative;
