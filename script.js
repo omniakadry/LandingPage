@@ -1,11 +1,3 @@
-//
-// Professional and optimized JavaScript file.
-// Key Changes:
-// - All event listeners are wrapped in a single DOMContentLoaded event.
-// - Use of Intersection Observer for efficient animations.
-// - Consolidated and cleaner code.
-// - Removed redundant and less efficient code blocks.
-//
 
 document.addEventListener('DOMContentLoaded', () => {
 
