@@ -27,6 +27,8 @@ body {
     text-align: right;
     background-color: var(--background-light);
     overflow-x: hidden;
+    background-attachment: scroll;
+
 }
 
 .container {
@@ -107,7 +109,7 @@ body {
 
 .big-section {
     position: relative;
-    background: url('imgs/cover1.jpeg');
+    background-image: url('imgs/cover1.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
