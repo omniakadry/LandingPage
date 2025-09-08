@@ -27,7 +27,6 @@ body {
     text-align: right;
     background-color: var(--background-light);
     overflow-x: hidden;
-
 }
 
 .container {
@@ -36,7 +35,7 @@ body {
     padding: 0 20px;
 }
 
-/* Header */
+/* ============== Header ============== */
 .header {
     background: var(--text-light);
     color: var(--white);
@@ -93,7 +92,6 @@ body {
     position: relative;
     overflow: hidden;
     transform: perspective(1px) translateZ(0);
-    /* For hardware acceleration */
 }
 
 .whatsapp-btn:hover {
@@ -105,56 +103,35 @@ body {
     font-size: 1.3rem;
 }
 
-
+/* ============= Hero Section ============= */
 .big-section {
     position: relative;
-    background-image: url('imgs/cover1.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
     color: var(--white);
     overflow: hidden;
 }
 
-/* Hero Section */
+.big-section::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('imgs/cover1.jpeg') center/cover no-repeat;
+    z-index: -1;
+}
+
 .hero {
     position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('imgs/cover.png'); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     color: var(--white);
     overflow: hidden;
     text-align: center;
 }
 
-/* .big-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(52, 73, 94, 0.1), rgba(44, 62, 80, 0.2));
-    backdrop-filter: blur(3px);
-    z-index: 1;
-} */
-.big-section::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('imgs/cover1.jpeg') center/cover no-repeat;
-  z-index: -1;
-}
 .hero-content {
     position: relative;
     z-index: 2;
@@ -197,7 +174,6 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
     transform: perspective(1px) translateZ(0);
-    /* For hardware acceleration */
 }
 
 .btn-hero:hover {
@@ -211,11 +187,10 @@ body {
     z-index: 2;
 }
 
-/* Services Section */
+/* =========== Services Section =========== */
 .services {
     padding: 6rem 0;
     border-top: 1px solid #eee;
-
 }
 
 .services-header {
@@ -398,7 +373,6 @@ body {
     transform: perspective(1px) translateZ(0);
 }
 
-/* Hover effect with a moving background */
 .btn-order::before {
     content: '';
     position: absolute;
@@ -421,7 +395,9 @@ body {
     box-shadow: 0 8px 25px rgba(109, 213, 237, 0.4);
 }
 
-/* Features Section */
+/* ==================================== */
+/* =========== Features Section =========== */
+/* ==================================== */
 .features {
     position: relative;
     padding: 4rem 0;
@@ -556,7 +532,9 @@ body {
     font-size: 0.95rem;
 }
 
-/* CTA Section */
+/* ==================================== */
+/* ============= CTA Section ============= */
+/* ==================================== */
 .cta {
     padding: 6rem 0;
     position: relative;
@@ -569,7 +547,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    /* background: var(--primary-color); */
+    background: var(--primary-color);
     z-index: 1;
 }
 
@@ -624,10 +602,8 @@ body {
     overflow: hidden;
     z-index: 1;
     transform: perspective(1px) translateZ(0);
-    /* For hardware acceleration */
 }
 
-/* Hover effect with subtle shadow and lift */
 .btn-cta-primary:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(109, 213, 237, 0.6);
@@ -651,7 +627,6 @@ body {
     transform: scale(1.1);
 }
 
-
 .cta-guarantee {
     display: flex;
     justify-content: center;
@@ -672,7 +647,9 @@ body {
     font-size: 1.1rem;
 }
 
-/* Footer */
+/* ==================================== */
+/* ============== Footer ============== */
+/* ==================================== */
 .footer {
     background: var(--text-light);
     color: #f0f0f0;
@@ -699,7 +676,6 @@ body {
 .footer-content {
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 1fr));
-    /* Adjusted for desktop */
     gap: 2rem;
     margin-bottom: 2rem;
     position: relative;
@@ -710,11 +686,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* Aligned to the right for RTL */
     justify-content: flex-start;
     transition: transform 0.3s ease;
     text-align: right;
-    /* Aligned to the right for RTL */
 }
 
 .footer-brand-section {
@@ -725,7 +699,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* Aligned to the right for RTL */
     gap: 10px;
     margin-bottom: 1rem;
 }
@@ -815,7 +788,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* Aligned to the right for RTL */
     gap: 10px;
     width: 100%;
 }
@@ -827,7 +799,6 @@ body {
     color: #dcdcdc;
     font-size: 0.95rem;
     justify-content: flex-start;
-    /* Aligned to the right for RTL */
     width: 100%;
 }
 
@@ -868,23 +839,21 @@ body {
     width: auto;
 }
 
-/* Responsive Design */
+/* ==================================== */
+/* =========== Responsive Design =========== */
+/* ==================================== */
 @media (max-width: 992px) {
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
     .footer-content {
         grid-template-columns: 1fr;
-        /* Stack on smaller screens */
         gap: 2rem;
     }
-
     .footer-section {
         align-items: center;
         text-align: center;
     }
-
     .footer-brand,
     .contact-info,
     .contact-item,
@@ -892,12 +861,10 @@ body {
         align-items: center;
         text-align: center;
     }
-
     .footer-section h4::after {
         right: 50%;
         transform: translateX(50%);
     }
-
     .footer-section p {
         max-width: 100%;
     }
@@ -907,24 +874,19 @@ body {
     .features {
         padding: 3rem 0;
     }
-
     .features-grid {
         grid-template-columns: 1fr;
         gap: 1.2rem;
     }
-
     .footer {
         padding: 2.5rem 0 1rem;
     }
-
     .footer-content {
         gap: 2rem;
     }
-
     .footer-section {
         padding: 0 1rem;
     }
-
     .footer-section h4 {
         margin-bottom: 1rem;
     }
@@ -935,65 +897,52 @@ body {
         padding: 2rem 0 1rem;
         text-align: center;
     }
-
     .footer-content {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         text-align: center;
     }
-
     .footer-section {
         align-items: center;
         text-align: center;
     }
-
     .footer-brand {
         align-items: center;
         text-align: center;
     }
-
     .footer-section h4::after {
         right: 50%;
         transform: translateX(50%);
     }
-
     .footer-section ul {
         padding: 0;
         text-align: center;
     }
-
     .footer-section ul li {
         margin: 8px 0;
         width: 100%;
         text-align: center;
     }
-
     .contact-info {
         align-items: center;
         text-align: center;
         gap: 12px;
     }
-
     .contact-item {
         justify-content: center;
         text-align: center;
         width: 100%;
     }
-
     .footer-logo {
         height: 40px;
         margin: 0 auto 10px;
     }
-
     .footer-brand .brand-name {
         font-size: 1.2rem;
         text-align: center;
     }
-
     .sbc-logo {
         height: 70px;
         margin: 0 auto;
- 
-        
     }
 }
