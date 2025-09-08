@@ -121,8 +121,3 @@ document.addEventListener('DOMContentLoaded', () => {
     document.head.appendChild(style);
 
 });
-@supports (-webkit-touch-callout: none) {
-  .my-bg {
-    background-attachment: scroll !important;
-  }
-}

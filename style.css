@@ -134,7 +134,7 @@ body {
     text-align: center;
 }
 
-.big-section::before {
+/* .big-section::before {
     content: "";
     position: absolute;
     top: 0;
@@ -144,8 +144,17 @@ body {
     background: linear-gradient(45deg, rgba(52, 73, 94, 0.1), rgba(44, 62, 80, 0.2));
     backdrop-filter: blur(3px);
     z-index: 1;
+} */
+.big-section::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('imgs/cover1.jpeg') center/cover no-repeat;
+  z-index: -1;
 }
-
 .hero-content {
     position: relative;
     z-index: 2;
@@ -985,5 +994,6 @@ body {
         height: 70px;
         margin: 0 auto;
  
+        
     }
 }
