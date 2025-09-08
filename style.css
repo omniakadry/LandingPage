@@ -27,7 +27,6 @@ body {
     text-align: right;
     background-color: var(--background-light);
     overflow-x: hidden;
-    background-attachment: scroll;
 
 }
 
@@ -113,7 +112,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     color: var(--white);
     overflow: hidden;
 }
@@ -985,5 +984,6 @@ body {
     .sbc-logo {
         height: 70px;
         margin: 0 auto;
+ 
     }
 }
